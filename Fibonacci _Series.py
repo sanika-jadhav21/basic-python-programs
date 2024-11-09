@@ -1,5 +1,5 @@
 # Fibonacci Series 
-"""
+
 n = int(input("Enter the number: "))
 print("Fibonacci Sequence:")
 
