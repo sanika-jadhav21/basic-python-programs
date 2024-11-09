@@ -1,0 +1,39 @@
+# BASIC CALCULATOR
+
+print("WelCome To MY CALCULATOR ")
+
+print("Select Options:-1/2/3/4")
+print("Option:1 ---> Additon")
+print("Option:2 ---> Substraction")
+print("Option:3 ---> Multiplication")
+print("Option:4 ---> Division")
+
+
+n=(int(input("Enter Option:")))
+
+if n not in (1, 2, 3, 4):
+    print("something Wrong Choice....Check again your input")
+else:    
+    num1=int(input("Enter num 1 :"))
+    num2=int(input("Enter num 2 :"))
+
+def print_calculation(n,num1,num2):
+    
+    if(n==1):
+        print("Addition :",num1+num2)
+    
+    elif(n==2):
+        print("Substraction:",num1-num2)
+        
+    elif(n==3):
+        print("Multiplication:",num1*num2)
+        
+    elif(n==4):
+        if(num2 != 0):
+            print("Division:",num1/num2)
+        else:
+            print("Division by 0 is not allowed")
+
+       
+print_calculation(n,num1,num2)       
+            
